@@ -1,3 +1,4 @@
+/*animating the logo */
 #logo {
     animation: animate;
     animation-duration: 5s;
@@ -22,6 +23,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+/* Step 4: modifying the placement of the nav links*/
 .nav_links{
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@ header{
 a:link, :visited{
     color: blue;
 }
+/* Step 6: modifying only header elements that are direct children of a card class */
 .card > header {
     background-color: #288088;
     border: solid 20x #45ADAD;
@@ -51,12 +54,14 @@ a:link, :visited{
     margin: 10px;
     width: 300px;
 }
+/* styling the images in the gallery class */
 .gallery {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
+/* implementing specifications for screens wider than 900px */
 @media screen and (min-width: 900px){
     header{
         flex-wrap: nowrap;
@@ -83,7 +88,7 @@ a:link, :visited{
         animation: none !important;
     }
 }
-
+/* implementing specifications for print screens*/
 @media print{
     body{
         font-family: Arial, Helvetica;
